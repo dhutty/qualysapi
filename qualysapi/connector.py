@@ -320,7 +320,7 @@ class QGConnector(api_actions.QGActions):
                 logger.debug(e)
                 pass
             # Response received.
-            response = str(request.content)
+            response = request.text
             logger.debug('response text =\n%s' % (response))
             # Keep track of how many retries.
             retries += 1
